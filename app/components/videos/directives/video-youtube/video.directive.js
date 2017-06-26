@@ -1,4 +1,4 @@
-angular.module('myApp.index')
+angular.module('myApp.videos')
 .directive('videoYoutube', function() {
   return {
     restrict: 'E',

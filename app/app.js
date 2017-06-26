@@ -4,6 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.index',
+  'myApp.videos',
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');

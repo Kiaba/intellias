@@ -1,4 +1,4 @@
-angular.module('myApp.index')
+angular.module('myApp.videos')
 .directive('videoFacebook', function() {
   return {
     restrict: 'E',

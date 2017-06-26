@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.index')
+angular.module('myApp.videos')
 
 .service('videosService', ['$http', function($http) {
   this.load = function() {

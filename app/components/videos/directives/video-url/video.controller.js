@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.index')
+angular.module('myApp.videos')
 
 .controller('VideoUrlCtrl', ['$scope', '$sce', function($scope, $sce) {
   
