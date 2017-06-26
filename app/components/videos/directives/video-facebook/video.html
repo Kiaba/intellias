@@ -1,3 +1,4 @@
-<div class="video-facebook-wrapper">
-  <iframe class="video" ng-init="initialize()" ng-src="{{src}}" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+<div class="video-facebook-wrapper" ng-init="initialize()">
+  <iframe class="video" ng-if="hasVideoId" ng-src="{{src}}" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+  <div ng-hide="hasVideoId" class="video-error">Facebook video post is missing</div>
 </div>

@@ -1,5 +1,6 @@
-<div class="video-url-wrapper">
-  <video class="video" ng-init="initialize()">
+<div class="video-url-wrapper" ng-init="initialize()">
+  <video class="video" ng-if="hasVideoId">
    <source ng-src="{{src}}">
   </video>
+  <div ng-hide="hasVideoId" class="video-error">Url video is missing</div>
 </div>

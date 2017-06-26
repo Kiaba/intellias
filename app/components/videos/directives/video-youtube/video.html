@@ -1,3 +1,4 @@
-<div class="video-youtube-wrapper">
-  <iframe class="video" ng-init="initialize()" ng-src="{{src}}" frameborder="0" allowfullscreen></iframe>
+<div class="video-youtube-wrapper" ng-init="initialize()">
+  <iframe class="video" ng-if="hasVideoId" ng-src="{{src}}" frameborder="0" allowfullscreen></iframe>
+  <div ng-hide="hasVideoId" class="video-error">Youtube video is missing</div>
 </div>
